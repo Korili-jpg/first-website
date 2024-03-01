@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="bloon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geburtsag | Korili</title>
+    <style>
+        body {
+            background-color: aqua;
+            text-align: center;
+        }
+        
+        .headline {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 30px;
+        }
+        
+        .letters {
+            display: inline-block;
+            background: linear-gradient(45deg, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #4B0082, #8B00FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 400% 400%;
+            -webkit-animation: rainbowanim 10s ease infinite;
+            -moz-animation: rainbowanim 10s ease infinite;
+            animation: rainbowanim 10s ease infinite;
+        }
+        
+        @-webkit-keyframes rainbowanim {
+            0% {
+                background-position: 0% 50%
+            }
+            50% {
+                background-position: 100% 50%
+            }
+            100% {
+                background-position: 0% 50%
+            }
+        }
+        
+        @-moz-keyframes rainbowanim {
+            0% {
+                background-position: 0% 50%
+            }
+            50% {
+                background-position: 100% 50%
+            }
+            100% {
+                background-position: 0% 50%
+            }
+        }
+        
+        @keyframes rainbowanim {
+            0% {
+                background-position: 0% 50%
+            }
+            50% {
+                background-position: 100% 50%
+            }
+            100% {
+                background-position: 0% 50%
+            }
+        }
+        
+        .mittelteil {
+            display: flex;
+            text-align: center;
+        }
+        
+        .rechts {
+            margin-left: 10px;
+            image-rendering: auto;
+            text-align: center;
+        }
+        
+        .bloons {
+            border-radius: 4px;
+            padding: 5px;
+            width: 50px;
+        }
+        
+        .mitte {
+            margin: 50px;
+            border: #0000FF;
+            border-style: double;
+            border-radius: 20px;
+            border-image: fill;
+            box-sizing: unset;
+            text-align: center;
+            padding-top: 40px;
+            color: green;
+            font-size: 20px;
+        }
+        
+        .links {
+            margin-left: 20px;
+            image-rendering: auto;
+            text-align: center;
+        }
+        
+        .wichtig {
+            font-size: 25px;
+            text-decoration-line: underline;
+            color: red;
+        }
+        
+        .ab {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="headline">
+        <div class="letters">
+            <h1>Alles Gute zum Geburtstag </h1>
+        </div>
+    </div>
+    <div class="mittelteil">
+        <div class="rechts"><img src="bloons.png" class="bloons"></div>
+        <div class="mitte"> <span class="ab"> - </span> Ich wünsche dir alles Gute zu deinem Geburtstag <span class="ab"> - </span> <br> viel <span class="wichtig">Gesundheit</span> und <span class="wichtig">Glück</span> <br><br><span class="letters">Dein Korili</span> </div>
+        <div class="links"><img src="bloons.png" class="bloons"></div>
+    </div>
+
+
+</body>
+
+</html>
